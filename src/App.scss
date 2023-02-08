@@ -1,0 +1,38 @@
+.App{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    flex-direction: row;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: #f5b833;
+    z-index: -2;
+    .image{
+        img{
+            height: 100%;
+            z-index: 9;
+        }
+    }
+    .right{
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .content{
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+
+            p{
+                color: #fff;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .create{
+                color: #26545c;
+            }
+        }
+    }
+}
